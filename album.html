@@ -85,11 +85,10 @@
 
     /* GALLERY STYLES */
     .gallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 12px;
-        margin-top: 15px;
-    }
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
 
     .gallery img {
         width: 100%;
@@ -102,13 +101,6 @@
     .gallery img:hover {
         transform: scale(1.02);
         box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-
-    /* Mobile: stack to 1 column */
-    @media (max-width: 700px) {
-        .gallery {
-            grid-template-columns: 1fr;
-        }
     }
 
 </style>
@@ -126,7 +118,7 @@
 </div>
 
 <header>
-    <h1>Photo Album</h1>
+    <h1>Memories</h1>
 </header>
 
 <div class="container">
