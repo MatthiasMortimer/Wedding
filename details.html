@@ -1,224 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wedding of Matthias & Gracelynn</title>
-
-<style>
-    body {
-        margin: 0;
-        font-family: "Georgia", "Times New Roman", serif;
-        background: #f4ecd8;
-        color: #3b2f2f;
-        line-height: 1.6;
-    }
-    .guest-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-  h1 { font-size: 20px; 
-  }
-
-.guest-grid h3 {
-    margin-top: 0;
-    color: #5a3e2b;
-}
-
-/* Mobile responsive */
-@media (max-width: 700px) {
-    .guest-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-    header {
-    background: url('header_image.png');
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 6px black;
-}
-
-    header h1 {
-        font-size: 3em;
-        margin: 0;
-    }
-
-    header p {
-        font-size: 1.3em;
-    }
-
-    .container {
-        max-width: 900px;
-        margin: auto;
-        padding: 40px 20px;
-    }
-
-    .card {
-        background: #fff7e6;
-        padding: 25px;
-        margin-bottom: 20px;
-        border-left: 6px solid #7a5c2e;
-        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-        color: #5a3e2b;
-    }
-
-    .warning {
-        background: #fff0e0;
-        border-left: 6px solid #b23a3a;
-    }
-
-    footer {
-        text-align: center;
-        padding: 20px;
-        font-size: 0.9em;
-        background: #e8dcc4;
-    }
-    .menu {
-    position: sticky;
-    top: 0;
-    background: #3b2f2f;
-    padding: 12px;
-    text-align: center;
-    z-index: 1000;
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    font-family: Georgia, serif;
-}
-
-.menu a:hover {
-    text-decoration: underline;
-}
-</style>
-</head>
-
-<body>
-<div class="menu">
-    <a href="index.html">Home</a>
-    <a href="details.html">Details</a>
-    <a href="how-we-met.html">Our Story</a>
-        <br>
-    <a href="forms.html">Rsvp & Registry</a>
-    <a href="album.html">Photo Album</a>
-
-</div>
-
-<header>
-    <div>
-        <h1 style="margin-bottom:0;">
-            The Wedding of
-        </h1>
-       <p style="margin: 0; padding-top :0;">
-       Mr. and Mrs. Dunlap
-       </p>
-    </div>
-</header>
-
 <div class="container">
 
+    <!-- Event Details -->
     <div class="card">
         <h2>Event Details</h2>
         <p><strong>Date:</strong> May 16th</p>
-        <p><strong>Time:</strong> Around Noon-3 PM</p>
-        <p><strong>Location:</strong>2105 Meadowlake Rd, Conway, AR 72032 <strong> Church at Meddowlake</strong> </p>
+        <p><strong>Time:</strong> Around Noon–3 PM</p>
+        <p><strong>Location:</strong> 2105 Meadowlake Rd, Conway, AR 72032 <strong>Church at Meadowlake</strong></p>
     </div>
 
-<div class="card">
+    <!-- Parents -->
+    <div class="card">
+        <div class="guest-grid">
 
-    <div class="guest-grid">
+            <div> 
+                <h3>Esteemed Parents of the Bride</h3>
+                <ul>
+                    <li>Neal Herrell</li>
+                    <li>Heather Lowe</li>
+                </ul>
+            </div>
 
-<!-- Parents of bride and groom-->
-    <div> 
-<h3>Esteemed parents of Bride and Groom</h3>
-<br>
-<h4>Bride</h4>
-<ul>
-    <li>Neal Herrell</li>
-    <li style="margin-bottom:0;">
-        Heather Lowe
-    </li>
-</ul>
+            <div>
+                <h3>Esteemed Parent of the Groom</h3>
+                <ul>
+                    <li>Mica Dunlap</li>
+                </ul>
+            </div>
+
+        </div>
     </div>
-    <br>
-    <div>
-        <h4 style="margin: 0; padding-top :0;">
-            Groom
-        </h4>
-    <ul>
-        <li>Mica Dunlap</li>
-    </ul>
-    </div>
-    <h
-</div>
 
+    <!-- Guests -->
     <div class="card">
         <h2>Guests</h2>
-        <p> The party will be a potuck at the Church at Meddowlake, with simple finger foods and dips. Bring something easy and tasty!</p>
+        <p>
+            The party will be a potluck at the Church at Meadowlake, with simple finger foods and dips. 
+            Bring something easy and tasty!
+        </p>
         <h3>Headcount</h3>
-        <p>We expect around 20 to come.</p>
+        <p>We expect around 20 guests.</p>
     </div>
 
+    <!-- Theme -->
     <div class="card">
         <h2>Theme</h2>
         <h4>Hobbitcore</h4>
         <p>
             Warm countryside, rustic elegance, and the cozy feeling of a Hobbit celebration—woodland tones,
-            simple beauty, and joyful gathering under the open sky. Think Bilbo's Birthday Party. 
+            simple beauty, and joyful gathering under the open sky. Think Bilbo's Birthday Party.
         </p>
-            <h3>Key Elements</h3>
-            <ul>
-                <li><strong>Materials:</strong> Natural fibers like linen, cotton, wool, and tweed
-</li>
-                <li><strong>Colors:</strong> Earthy and warm tones such as moss green, brown, cream, ocher, and mustard.
-</li>
-                <li><strong>Keypieces:</strong> Waistcoats (vests), blazers, knickerbockers (cropped pants), suspenders, and cloaks.
-</li>
-                <li><strong> Feminine Style:</strong> Calf-length skirts, peasant blouses, aprons, bodices, and shawls.
-</li>
-                <li><strong>Accessories:</strong> Simple leather belts, ditsy floral patterns, and straw sun hats.
-</li>
-                <li><strong>Footwear:</strong> Barefoot is allowed optionally. Practical options include leather moccasins, clogs, or simple boots.</li>
-</ul>
 
-
+        <h3>Key Elements</h3>
+        <ul>
+            <li><strong>Materials:</strong> Natural fibers like linen, cotton, wool, and tweed</li>
+            <li><strong>Colors:</strong> Earthy tones like moss green, brown, cream, ocher, and mustard</li>
+            <li><strong>Key Pieces:</strong> Waistcoats, blazers, knickerbockers, suspenders, cloaks</li>
+            <li><strong>Feminine Style:</strong> Calf-length skirts, peasant blouses, aprons, bodices, shawls</li>
+            <li><strong>Accessories:</strong> Leather belts, floral patterns, straw hats</li>
+            <li><strong>Footwear:</strong> Barefoot (optional), moccasins, clogs, or simple boots</li>
+        </ul>
     </div>
-        <div class="card warning">
+
+    <!-- Important Notes -->
+    <div class="card warning">
         <h2>Important Notes</h2>
-        <p>
-            <li>This page describes the <strong> Theme</strong> of the party, not required clothing items.  </li>
-            <li>While we embrace a Shire / medieval fantasy theme, <strong>cosplaying is not allowed</strong>.
-            Please do not wear elf ears, costumes, or <strong>character</strong> attire. We kindly ask guests to keep attire hobbit<strong>core</strong> themed. (There will be pre-approved cosplayers.)</li>
-            <li>Please don't bring any plus ones so we don't have any surprises, thanks!</li>
-        </p>
+        <ul>
+            <li>This page describes the <strong>theme</strong>, not required clothing items.</li>
+            <li>
+                While we embrace a Shire/medieval fantasy theme, <strong>cosplaying is not allowed</strong>.
+                Please avoid elf ears, costumes, or character attire.
+            </li>
+            <li>Please do not bring plus-ones so we can plan accordingly.</li>
+        </ul>
     </div>
 
-<div class="card" style="background-color: rgb(143, 153, 228);">
-    <div style="text-align:center; margin-top:20px;
-    ">
-
+    <!-- RSVP -->
+    <div class="card" style="background-color: rgb(143, 153, 228); text-align:center;">
         <a href="https://matthiasmortimer.github.io/Wedding/forms.html">
             <button style="
                 background-color:#3b2f2f;
                 color:white;
                 border:none;
                 padding:12px 24px;
-                font: size 25px;
+                font-size:18px;
                 border-radius:8px;
                 cursor:pointer;
                 box-shadow:0 3px 8px rgba(0,0,0,0.2);
@@ -227,11 +91,5 @@
             </button>
         </a>
     </div>
- </div>
 
-<footer>
-    With love, Matthias & Gracelynn
-</footer>
-
-</body>
-</html>
+</div>
