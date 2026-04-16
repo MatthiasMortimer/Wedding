@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wedding of Matthias & Gracelynn</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Georgia", "Times New Roman", serif;
+        background: #f4ecd8;
+        color: #3b2f2f;
+        line-height: 1.6;
+    }
+
+    h1 { 
+        font-size: 20px; 
+    }
+
+    header {
+        background: url('header_image.png');
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 6px black;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+        margin: 0;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 30px 15px;
+    }
+
+    .card {
+        background: #fff7e6;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-left: 6px solid #7a5c2e;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        color: #5a3e2b;
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9em;
+        background: #e8dcc4;
+    }
+
+    .menu {
+        position: sticky;
+        top: 0;
+        background: #3b2f2f;
+        padding: 12px;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        font-family: Georgia, serif;
+    }
+
+    .menu a:hover {
+        text-decoration: underline;
+    }
+
+    /* GALLERY STYLES */
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.02);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="menu">
+    <a href="index.html">Home</a>
+    <a href="details.html">Details</a>
+    <a href="how-we-met.html">Our Story</a>
+    <br>
+    <a href="forms.html">Rsvp & Registry</a>
+    <a href="album.html">Photo Album</a>
+</div>
+
+<header>
+    <h1>Memories</h1>
+</header>
+
+<div class="container">
+    <div class="card warning">
+        <h2>Examples</h2>
+
+      <div class="gallery">
+          <!--PHOTOS -->
+            <img src="examples/ex1.webp">
+            <img src="examples/ex2.webp">
+            <img src="examples/ex3.webp">
+            <img src="examples/ex4.webp">
+            <img src="examples/ex5.webp">
+            <img src="examples/ex6.webp">
+            <img src="examples/ex7.webp">
+            <img src="examples/ex8.webp">
+            <img src="examples/ex9.webp">
+
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    With love, Matthias & Gracelynn
+</footer>
+
+<script>
+// Lightbox (click to enlarge)
+document.querySelectorAll(".gallery img").forEach(img => {
+    img.onclick = () => {
+        const overlay = document.createElement("div");
+        overlay.style = `
+            position: fixed;
+            top:0; left:0;
+            width:100%; height:100%;
+            background: rgba(0,0,0,0.85);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            z-index: 999;
+        `;
+
+        const big = document.createElement("img");
+        big.src = img.src;
+        big.style.maxWidth = "90%";
+        big.style.maxHeight = "90%";
+        big.style.borderRadius = "10px";
+
+        overlay.appendChild(big);
+        overlay.onclick = () => overlay.remove();
+
+        document.body.appendChild(overlay);
+    };
+});
+</script>
+
+</body>
+</html>
